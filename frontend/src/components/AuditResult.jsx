@@ -78,6 +78,7 @@ export default function AuditResult({ data, tools, onReset }) {
                 {actionLabel[r.action]}
               </span>
             </div>
+            <p>{aiSummary}</p>
             <p className="text-gray-300 mt-3 text-sm">{r.recommendation}</p>
             {r.savings > 0 && (
               <p className="text-green-400 font-semibold mt-2">
