@@ -28,7 +28,7 @@ const LeadCapture = ({auditData,tools,onDone}) => {
                     auditData,tools,
                 })
                 const {shareId,aiSummary}=res.data;
-                onDone({id:shareId,summary:aiSummary})
+                onDone({id:shareId})
             }catch(err){
                 console.log("Full error:", err);
   console.log("Response error:", err.response?.data);
