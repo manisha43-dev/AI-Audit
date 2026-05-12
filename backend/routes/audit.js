@@ -105,7 +105,7 @@ router.post("/save", limiter, async (req, res) => {
       `,
     });
 
-    res.json({ shareId, aiSummary });
+    res.json({ shareId });
   } catch (err) {
     console.error(err);
     res.status(500).json({ error: "Server error" });
